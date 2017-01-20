@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js对象</title>
+    <script>
+        /*1.直接创建对象*/
+        var person = new Object();
+        //var person = {};//与上一行等价
+        person.name = "宝宝";
+        person.age = 3;
+//        alert("姓名:" + person.name + ",age:" + person.age + "岁");
+
+        var person2 = {name: "宝宝", age: 3};
+//        alert(person2["name"] + "," + person2["age"]);
+
+        /*2.使用对象构造器的方式,创建对象,即函数的方式*/
+        function person3(name, age, height){
+            this.name = name;
+            this.age = age;
+            this.height = height;
+        }
+
+        //调用
+        var sister = new person3("张三", 20, 180);
+        //alert(sister.name + "," + sister.age + "," + sister.height);
+
+        /*1.String字符串对象*/
+        //查找字符串
+        var str = "Hey, Hello Lily, Hello Lucy!"
+        document.write(str.indexOf("Hello") + "<br>");// =>5
+        document.write(str.lastIndexOf("Hello") + "<br>");//=>17
+
+        //截取字符串:
+        //1.substring() 获取从第一个索引到最后一个索引之间的字符串
+        var tempStr = str.substring(5, 10);//包括开始,但是不包括结束
+        document.write(tempStr + "<br>");
+        //2.substr() 获取从指定的索引,指定的长度的字符串
+        var tempStr2 = str.substr(5,5);
+        document.write(tempStr2 + "<br>");
+        //3.未知字符串的情况
+        var idx = str.indexOf("Hello");
+        var temp = str.substring(idx, idx + 5);
+        document.write(temp + "<br>");
+        var temp2 = str.substring(idx, str.length);
+        document.write(temp2 + "<br>");
+
+        //去掉两边的空格 trim()
+        var msg = "   a bcd ef   g   ";
+        var trimMsg = msg.trim();
+        document.write(trimMsg + "<br>");
+        document.write("<hr>");
+        /*2.Date日期对象*/
+        //创建日期
+        //(1) new Date();
+        var today = new Date(); //获取当前日期
+        document.write(today + "<br>");
+        //(2) new Date(milliseconds);
+        //(3) new Date(dateString);
+        var date1 = new Date("2020-02-02");
+        document.write(date1 + "<br>");
+        //(4) new Date(year, month, day, hours, minute, second, milliseconds);
+        //月份从 0 开始  0-11
+        var date2 = new Date(2019, 11, 01);
+        document.write(date2 + "<br>");
+        document.write(Math.ceil(11.0) + "<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

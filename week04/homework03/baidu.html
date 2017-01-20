@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下,你就知道</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/baidu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/baidu.js" type="text/javascript"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- pc端 -->
+    <div class="container-pc">
+        <!-- 头部 start -->
+        <div class="header">
+            <div class="nav fr">
+                <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                <a href="http://news.baidu.com/">新闻</a>
+                <a href="http://www.hao123.com/">hao123</a>
+                <a href="http://map.baidu.com/">地图</a>
+                <a href="http://v.baidu.com/">视频</a>
+                <a href="http://tieba.baidu.com/">贴吧</a>
+                <a href="#" class="login">登录</a>
+                <div class="setting" id="setting">
+                    <a href="javascript:;">设置</a>
+                    <!-- 设置:点击菜单 -->
+                    <div class="bd-setting" id="bdSetting">
+                        <i class="setting-icon"></i>
+                        <a href="#">搜索设置</a>
+                        <a href="#">高级搜索</a>
+                        <a href="#">关闭预测</a>
+                        <a href="#">搜索历史</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="more" id="more">更多产品</a>
+            </div>
+        </div>
+        <!-- 更多产品:右侧边栏 -->
+        <div id="moreProduct" class="more-product">
+            <ul>
+                <li>
+                    更多产品
+                </li>
+                <li>
+                    <a href="http://music.baidu.com/" target="_blank"><span class="bd-one"></span>音乐</a>
+                </li>
+                <li>
+                    <a href="http://image.baidu.com/" target="_blank"><span class="bd-two"></span>图片</a>
+                </li>
+                <li>
+                    <a href="http://zhidao.baidu.com/" target="_blank"><span class="bd-three"></span>知道</a>
+                </li>
+                <li>
+                    <a href="http://wenku.baidu.com/" target="_blank"><span class="bd-four"></span>文库</a>
+                </li>
+                <li>
+                    <a href="http://top.baidu.com/" target="_blank"><span class="bd-five"></span>风云榜</a>
+                </li>
+                <li>
+                    <a href="https://www.baidu.com/more/" target="_blank">全部产品&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 头部 end -->
+
+        <!-- 主体 start -->
+        <div class="content cl">
+            <div class="logo">
+                <img src="images/bd_logo.png" alt="百度一下,你就知道">
+            </div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="box clear">
+                    <div>
+                        <p>
+                            <span class="voice"></span>
+                            <span class="camera"></span>
+                        </p>
+                        <input type="text" name="wd" id="wd" placeholder="百度一下,你就知道">
+                    </div>
+                    <input type="submit" value="百度一下">
+                </div>
+            </form>
+        </div>
+        <!-- 主体 end -->
+        <!-- 底部 start-->
+
+        <div class="footer">
+            <div id="qrcode">
+                <div class="qrcode-item qrcode-item-1">
+                    <div class="qrcode-img">
+                        <img src="images/ewm1.png" alt="">
+                    </div>
+                    <div class="qrcode-text"><p>
+                        <b>手机百度</b>
+                    </p>
+                        <p>
+                            <span>快人一步</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="qrcode-item qrcode-item-2">
+                    <div class="qrcode-img">
+                        <img src="images/ewm1.png" alt="">
+                    </div>
+                    <div class="qrcode-text">
+                        <p>
+                            <b>百度糯米</b>
+                        </p>
+                        <p>
+                            <span>一元大餐</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="ftConw" class="ftConw">
+                <p id="lh">
+                    <a id="setf" href="//www.baidu.com/cache/sethelp/help.html" target="_blank">
+                        <span>把百度设为主页</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://home.baidu.com">关于百度</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                </p>
+                <p id="cp">©2016&nbsp;Baidu&nbsp;
+                    <a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+                    <a href="http://jianyi.baidu.com/" class="cp-feedback">意见反馈</a>&nbsp;
+                    <span>京ICP证030173号</span>&nbsp;<i class="c-icon-icrlogo"></i>
+                </p>
+                <p>
+                    <a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                        <i class="c-icon-jgwablogo"></i>京公网安备11000002000001号
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- 底部 end-->
+    </div>
+
+    <!-- 移动端 -->
+    <div class="container wraper-mobile">
+        <!-- 头部 start -->
+        <nav role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="fl nav-left">
+                        <a href="#"><img src="images/cloudy.png" alt="weather" width="30px" height="30px"></a>
+                        <a href="#" class="ssd">18°</a>
+                        <a href="#" class="city">
+                            <p>北京</p>
+                            <p>空气 65</p>
+                        </a>
+                    </div>
+                    <div class="fr nav-right">
+                        <a href="#" class="user"><img src="images/user.jpg" alt="user" width="25px" height="20px"></a>
+                        <a href="#" class="tshirt"><img src="images/tshirt.png" alt="tshirt" width="30px" height="30px"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-main cl">
+            <div class="mobile-logo">
+                <img src="images/bd_logo.png" alt="百度一下,你就知道">
+            </div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="mobile-box clear">
+                    <div class="search">
+                        <input type="text" name="wd">
+                    </div>
+                    <input type="submit" value="百度一下">
+                </div>
+            </form>
+        </div>
+
+        <div class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="image icon1"></span>
+                        <span class="text">关注</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon2"></span>
+                        <span class="text">新闻</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon3"></span>
+                        <span class="text">小说</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon4"></span>
+                        <span class="text">视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon5"></span>
+                        <span class="text">糯米</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon6"></span>
+                        <span class="text">地图</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="water-container">
+            <div class="news">
+                <h3>员工以辞职威胁老板要求分800万分红,老板一句话令他发狂</h3>
+                <div class="img-box">
+                    <img src="images/pic1.jpeg" alt="">
+                    <img src="images/pic2.jpeg" alt="">
+                    <img src="images/pic3.jpeg" alt="">
+                </div>
+                <div class="time">互联网 04:30</div>
+            </div>
+
+            <div class="news">
+                <h3>员工以辞职威胁老板要求分800万分红,老板一句话令他发狂</h3>
+                <div class="img-box">
+                    <img src="images/pic1.jpeg" alt="">
+                    <img src="images/pic2.jpeg" alt="">
+                    <img src="images/pic3.jpeg" alt="">
+                </div>
+                <div class="time">互联网 04:30</div>
+            </div>
+            <div class="news">
+                <h3>员工以辞职威胁老板要求分800万分红,老板一句话令他发狂</h3>
+                <div class="img-box">
+                    <img src="images/pic1.jpeg" alt="">
+                    <img src="images/pic2.jpeg" alt="">
+                    <img src="images/pic3.jpeg" alt="">
+                </div>
+                <div class="time">互联网 04:30</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>用户反馈</p>
+            <p>使用百度前必读 Baidu 京ICP证030173号</p>
+            <p>京公网安备11000002000001号</p>
+        </div>
+
+    </div>
+</body>
+</html>

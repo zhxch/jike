@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery基础应用</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="test" data-name="no1"></div>
+<div class="test" data-name="no2"></div>
+
+<input type="button" value="点击我追加元素" id="btn">
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+    //ready:html骨架准备完成
+    //onload:整个页面加载完毕
+    /*$(document).ready(function(){
+        //把原声的对象变成jquery,只要用$();包起来就可以了。
+    });*/
+
+    $(function(){
+        /*$(".test").click(function(e){
+            console.log(e);
+        });*/
+
+        $("#btn").on("click", function(){
+            $(".test").append("<p id='myP'>hello</p>");
+        });
+        $(".test").on("click", "#myP", function(){
+            //操作css
+//            $(".test").css("color", "#fff");
+                $(".test").css({
+                            color: "#fff",
+                            backgroundColor: "#0000ff"
+                });
+        });
+
+        $(".test").each(function(){
+            console.log($(this).attr("data-name"));
+        });
+    });
+</script>
+</body>
+</html>

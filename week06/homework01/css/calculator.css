@@ -1,0 +1,64 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 12px;
+    font-family:  Arial, Georgia, "Times New Roman", Times, serif;
+    background: #dff0d8;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+.calculator {
+    width: 420px;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid #fff;
+    background-color: #f2f2f2;
+}
+.calculator h6 {
+    display: block;
+    padding: 10px;
+}
+.calculator div {
+    clear: both;
+}
+.calculator .cal-screen .screen {
+    width: 358px;
+    height: 40px;
+    text-align: right;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.calculator .cal-btn {
+    border: 1px solid #fff;
+    margin: 10px 20px;
+}
+.cal-btn ul {
+    margin: 7px;
+    overflow: hidden;
+}
+.cal-btn ul li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #e2e2e2;
+    overflow: hidden;
+    margin: 5px;
+    line-height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.cal-btn ul li.tool-btn {
+    background-color: #d0d0d0;
+}
+.cal-btn ul li:hover {
+    background-color: #fff;
+}
+
+.cal-btn ul li:active {
+    background-color:#fc0;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery动画</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="test">
+        <input type="file" style="opacity: 0">
+    </div>
+    <input type="button" id="btn" value="动画测试">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#btn").on("click", function(){
+                $(".test").toggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>

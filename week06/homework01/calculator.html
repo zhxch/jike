@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <h6>简易计算器</h6>
+        <form action="" id="calForm">
+            <div class="cal-screen">
+                <input type="text" class="screen" name="calScreen" id="calScreen" value="0" onfocus="this.blur();">
+            </div>
+            <div class="cal-btn">
+                <ul>
+                    <li name="number">7</li>
+                    <li name="number">8</li>
+                    <li name="number">9</li>
+                    <li class="tool-btn" id="sin">sin</li>
+                    <li class="tool-btn" id="plus">+</li>
+                    <li class="tool-btn" id="clear">C</li>
+                    <li name="number">4</li>
+                    <li name="number">5</li>
+                    <li name="number">6</li>
+                    <li class="tool-btn" id="cos">cos</li>
+                    <li class="tool-btn" id="minus">-</li>
+                    <li class="tool-btn" id="del">←</li>
+                    <li name="number">1</li>
+                    <li name="number">2</li>
+                    <li name="number">3</li>
+                    <li class="tool-btn" id="log2">log2</li>
+                    <li class="tool-btn" id="multiply">*</li>
+                    <li class="tool-btn" id="persent">%</li>
+                    <li name="number">0</li>
+                    <li id="doubleZero">00</li>
+                    <li id="dot">.</li>
+                    <li class="tool-btn" id="log10">log10</li>
+                    <li class="tool-btn" id="divide">/</li>
+                    <li class="tool-btn" id="equal">=</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/cal.js"></script>
+    <!--<script type="text/javascript" src="js/calculator.js"></script>-->
+</body>
+</html>

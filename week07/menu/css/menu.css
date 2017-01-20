@@ -1,0 +1,29 @@
+.container {
+    margin: 10px 100px;
+}
+.main,.hmain {
+    background: url(../images/bg2.png);
+    background-repeat: repeat-x;
+    width: 100px;
+}
+li {
+    background-color: #eee;
+}
+a {
+    padding: 5px 0 5px 20px;
+    width: 80px;
+    display: block;
+}
+.main a, .hmain a {
+    color: #fff;
+}
+.main li a, .hmain li a {
+    color: #000;
+}
+.main ul, .hmain ul {
+    display: none;
+}
+.hmain {
+    float: left;
+    margin-right: 1px;
+}

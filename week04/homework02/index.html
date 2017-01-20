@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SoSo后台</title>
+    <link rel="stylesheet" href="../百度首页/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SoSO网站</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">主页</a></li>
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="#">娱乐</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">生活 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">新鲜食物</a></li>
+                            <li><a href="#">全球美食</a></li>
+                            <li><a href="#">随心旅拍</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">萌宠</a></li>
+                            <li><a href="#">绿植</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">资料</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-3 hidden-xs sidebar">
+                <ul class="nav nav-list">
+                    <li class="nav-header">
+                        列表标题
+                    </li>
+                    <li class="active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="panel" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl2">
+                            日历 <span class="caret"></span>
+                        </a>
+                        <div id="dropdown-lvl2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav">
+                                    <li><a href="#">描述</a></li>
+                                    <li><a href="#">媒体</a></li>
+                                    <li><a href="#">网格</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">资料</a>
+                    </li>
+                    <li>
+                        <a href="#">设置</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                        <a href="#">帮助</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav nav-tabs mt-80" role="tablist">
+                    <li role="presentation" class="active"><a href="#">首页</a></li>
+                    <li role="presentation"><a href="#">资料</a></li>
+                    <li role="presentation"><a href="#">信息</a></li>
+                    <li role="presentation" class="dropdown pull-right">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">操作</a>
+                            </li>
+                            <li>
+                                <a href="#">设置栏目</a>
+                            </li>
+                            <li>
+                                <a href="#">更多设置</a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="#">分割线</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="page-header">
+                    <h1>
+                        发现美 <small>生活中不缺美,却少发现美的眼睛...</small>
+                    </h1>
+                </div>
+                <ul class="thumbnails">
+                    <li class="col-md-4">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="images/people.jpg" />
+                            <div class="caption">
+                                <h3>
+                                    冯诺尔曼结构
+                                </h3>
+                                <p>
+                                    普林斯顿是将程序指令存储器和数据存储器合并在一起的存储器结构。程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置。
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="images/city.jpg" />
+                            <div class="caption">
+                                <h3>
+                                    哈佛结构
+                                </h3>
+                                <p>
+                                    哈佛结构是将程序指令存储和数据存储分开的存储器结构，它的主要特点是将程序和数据存储在不同的存储空间中，进行独立编址。
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="images/sports.jpg" />
+                            <div class="caption">
+                                <h3>
+                                    改进型哈佛结构
+                                </h3>
+                                <p>
+                                    改进型的哈佛结构具有一条独立的地址总线和一条独立的数据总线，两条总线由程序存储器和数据存储器分时复用，使结构更紧凑。
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <nav>
+                    <ul class="pagination pagination-centered">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

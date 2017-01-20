@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html+Css面试题汇总</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h1>Html + Css面试题汇总</h1>
+            <p>时间:2016年10月27日 作者:张晓晨</p>
+        </nav>
+        <section>
+            <header>
+                1.对WEB标准以及W3C的理解与认识?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                2.xhtml和html有什么区别?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    HTML是一种基本的WEB网页标记语言,XHTML是一个基于XML的标记语言.<br>
+                    最主要的不同:<br>
+                    XHTML元素必须正确地嵌套,元素必须被关闭,标签名必须用小写字母,文档必须拥有根元素.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                3.行内元素有哪些?块级元素有哪些?空(void)元素有哪些?CSS的盒模型?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    行内元素: a b span img input select strong <br>
+                    块级元素: div p h1~h4 form ul <br>
+                    空元素: br hr img link meta <br>
+                    CSS盒模型:标准盒模型 怪异盒模型.border-box margin-box padding-box
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                4.CSS引入的方式有哪些?页面导入样式时,使用link和@import有什么区别?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    内联 内嵌 外链 导入
+                </p>
+                <p>
+                    (1)link属于HTML标签,而@import是css提供的.<br>
+                    (2)页面被加载时,link会同时被加载,而@import引用的是css,会等到页面加载完再加载.<br>
+                    (3)@import只在IE5以上才能识别,而link是HTML标签,无兼容问题.<br>
+                    (4)link方式的样式的权重高于@import的权重.<br>
+                    工作中建议用link方式导入样式.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                5.html5有哪些新特性,移除了哪些元素?如何处理html5新标签的浏览器兼容问题?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    新特性及新增元素:<br>
+                    (1)内容元素: header nav article section header<br>
+                    (2)表单控件: calender date time email url search<br>
+                    (3)控件元素: webworker websockt Geolocation
+                </p>
+                <p>
+                    移除元素:<br>
+                    (1)显现层元素: big center font s skrike tt u<br>
+                    (2)性能较差的元素: frame frameset noframes
+                </p>
+                <p>
+                    处理兼容性问题有两种方式:<br>
+                    (1)IE6/7/8支持通过document方法产生的标签,利用这一特性让这些浏览器支持HTML5新标签.<br>
+                    (2)使用html5 shim框架.<br>
+                    <!--[if lt IE 9]>
+                    <script> src="http://html5shim.googlecode.com/svn/trunk/html5.js"</script>
+                    <![endif]-->
+                    另外,DOCTYPE声明的方式是区分HTML和HTML5标志的一个重要因素,此外,还可以根据新增的结构,功能来加以区分.
+
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                6.对HTML语义化的理解?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    (1)正确的语义做正确的事情.<br>
+                    (2)html语义化让页面的内容结构化,结构更清晰,便于对浏览器及搜索引擎解析.<br>
+                    (3)即使在没有css样式的情况下,也可以以一种文档格式现实,而且是容易阅读的.<br>
+                    (4)搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重,利于SEO.<br>
+                    (5)对网站进行区块划分,便于阅读维护理解.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                7.CSS选择器有哪些?哪些属性可以即成?优先级算法如何计算?CSS3新增伪类有哪些?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    1）id 选择器（#myid）<br>
+                    2）类选择器（.myclassname）<br>
+                    3）标签选择器（div，h1，p）<br>
+                    4）相邻选择器（h1 + p）<br>
+                    5）子选择器（ul > li）<br>
+                    6）后代选择器（li a）<br>
+                    7）通配符选择器（* ）<br>
+                    8）属性选择器（ a[rel = "external"]）<br>
+                    9）伪类选择器（a: hover, li: nth-child）<br>
+                </p>
+                <p>
+                    可继承的样式： font-size font-family color, text-indent;<br>
+                    不可继承的样式：border padding margin width height;<br>
+                    优先级就近原则，同权重情况下样式定义最近者为准;<br>
+                    载入样式以最后载入的定位为准
+                </p>
+                <p>
+                    优先级:<br>
+                    !important >  id > class > tag<br>
+                    important 比 内联优先级高,但内联比 id 要高.<br>
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                8.为什么要初始化CSS样式?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异。<br>
+                    当然，初始化样式会对 SEO 有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。<br>
+                    最简单的初始化方法是：*{padding:0;margin:0} (不建议)<br>
+                    一般样式初始化：<br>
+                    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input,<br>
+                    textarea, th, td { margin:0; padding:0; }<br>
+                    body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }<br>
+                    h1, h2, h3, h4, h5, h6{ font-size:100%; }<br>
+                    address, cite, dfn, em, var { font-style:normal; }<br>
+                    code, kbd, pre, samp { font-family:couriernew, courier, monospace; }<br>
+                    small{ font-size:12px; }<br>
+                    ul, ol { list-style:none; }<br>
+                    a { text-decoration:none; }<br>
+                    a:hover { text-decoration:underline; }<br>
+                    sup { vertical-align:text-top; }<br>
+                    sub{ vertical-align:text-bottom; }<br>
+                    legend { color:#000; }<br>
+                    fieldset, img { border:0; }<br>
+                    button, input, select, textarea { font-size:100%; } table { border-collapse:collapse; border-spacing:0; }
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                9.position的值， relative和absolute分别是相对于谁进行定位的？
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    absolute:<br>
+                    生成绝对定位的元素， 相对于最近一级的 定位不是 static 的父元素来进行定位.<br>
+                    fixed （老IE不支持）:<br>
+                    生成绝对定位的元素，相对于浏览器窗口进行定位.<br>
+                    relative:<br>
+                    生成相对定位的元素，相对于其在普通流中的位置进行定位.<br>
+                    static  默认值。没有定位，元素出现在正常的流中.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                10.当自元素浮动且未知高度是,怎么使父元素容器适应子元素的高度?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    这种情况可在父窗口加上 overflow:auto;zoom:1;这两个样式属性，overflow:auto;是让父容器来自适应内部容器的高度，zoom:1;是为了兼容 IE6而使用的CSS HACK。zoom:1;通不过W3C的验证，这也是遗憾的一点,幸好IE支持[if IE]这种写法，可以专门针对IE来写单独的样式，所以可以把这个属性写在页面内的[if IE]中，这样应该可以通过验证了.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                11.IE6双倍边距bug?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    当页面内有多个连续浮动时，如本页的图标列表是采用左浮动，此时设置li的左侧margin值时，在最左侧呈现双倍情况。如外边距设置为10px， 而左侧则呈现出20px，解决它的方法是在浮动元素上加上display:inline;的样式，这样就可避免双倍边距bug.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                12.3像素问题及解决办法?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    当使用float浮动容器后，在IE6下会产生3px的空隙，有意思的是右侧容器没设置高度时3px在右侧容器内部，当设定高度后又跑到容器的左侧了。解决方法有几种，对于网上非常流行的给右侧div增加margin-right: -3px我不是很赞同，大大增加了布局的复杂度并且如果父div有设置浮动的话就会失效，简单高效的解决办法是在父div里设置overflow:hidden.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                13.清除浮动的方法有哪几种?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    (1)给浮动的元素的祖先元素加高度.有高度的盒子,才能关住浮动.<br>
+                    (2)clear:both.这种清除浮动的方法,有一个严重的问题,会导致margin失效.<br>
+                    (3)隔墙法和内墙法.<br>
+                    (4)overflow:hidden.给浮动元素的父亲加上overflow:hidden,那么父亲就能被儿子撑出高了,是个小偏方.<br>
+                    (5)使用after伪类<br>
+                    #parent:after{
+                    content:".";
+                    height:0;
+                    visibility:hidden;
+                    display:block;
+                    clear:both;
+                    }
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                14.margin的塌陷现象?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    标准文档流中,竖直方向的margin不叠加,以较大的为准.<br>
+                    如果不再标准文档流,比如盒子都浮动了,那么两个盒子之间是没有塌陷现象的.
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                15.谈谈对z-index的理解?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    (1)z-index值表示谁压着谁。数值大的压盖住数值小的。<br>
+                    (2)只有定位了的元素，才能有z-index值。也就是说，不管相对定位、绝对定位、固定定位，都可以使用z-index值。而浮动的东西不能用。<br>
+                    (3)z-index值没有单位，就是一个正整数。默认的z-index值是0。<br><br>
+                    (4)如果大家都没有z-index值，或者z-index值一样，那么谁写在HTML后面，谁在上面能压住别人。定位了的元素，永远能够压住没有定位的元素。<br>
+                    (5)从父现象：父亲怂了，儿子再牛逼也没用。
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                16.写出几种IE6 BUG的解决方法.
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    (1)双边距BUG float引起的 使用display.<br>
+                　　 (2)超链接hover 点击后失效 使用正确的书写顺序 link visited hover active.<br>
+                　　 (3)Ie z-index问题 给父级添加position:relative.<br>
+                　　 (4)Min-height 最小高度 !Important 解决.<br>
+                　　 (5)select 在ie6下遮盖 使用iframe嵌套.<br>
+                　　 (6)为什么没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px).
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                17.什么是CSS Hack?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    一般来说是针对不同的浏览器写不同的CSS,就是 CSS Hack。<br>
+                    IE浏览器Hack一般又分为三种，条件Hack、属性级Hack、选择符Hack（详细参考CSS文档：css文档）。例如:<br>
+                    <code class="hljs dts">    <span class="hljs-comment">// 1、条件Hack</span>
+                        <span>&lt;!--[if IE]&gt;</span>
+                        <span>&lt;style&gt;</span>
+                        .test{color:red;}
+                        <span>&lt;/style&gt;</span>
+                        <span>&lt;![endif]--&gt;</span>
+                        <span>// 2、属性Hack</span>
+                        .test{
+                        <span>color:</span><span>#090\9; <span>/* For IE8+ */</span></span>
+                        *color:<span class="hljs-meta">#f00;  <span>/* For IE7 and earlier */</span></span>
+                        <span>    _color:</span><span>#ff0;  <span>/* For IE6 and earlier */</span></span>
+                        }
+                        <span>// 3、选择符Hack</span>
+                        * html .test{color:<span>#090;}       <span>/* For IE6 and earlier */</span></span>
+                        * + html .test{color:<span>#ff0;}     <span>/* For IE7 */</span></span>
+                    </code>
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                18.响应式布局的基本注意事项有哪些?
+            </header>
+            <div class="wrap-box">
+                <span>答案分析:</span>
+                <p>
+                    html{font-size:62.5%}<br>
+                    font-size:2rem == font-size:20px;<br>
+                    min-width&max-width<br>
+                    百分比,不固定像素.<br>
+                    box-sizing:border-box;
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            margin: 90px auto;
+            border: 1px solid #ccc;
+        }
+        .container h3 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        button {
+            width: 70px;
+            height: 40px;
+        }
+        .container .rv {
+            display: inline-block;
+            border: 1px solid #ccc;
+            width: 100px;
+            height: 20px;
+            color: #0000ff;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>加减乘除简单运算</h3>
+    <input type="text" id="number1">
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" id="number2">
+    <span>=</span>
+    <span id="resultValue" class="rv"></span>
+    <button onclick="calculate();">计算</button>
+    <br>
+    <p id="msg" class="msg"></p><br>
+</div>
+
+<script>
+    //计算
+    function calculate(){
+        var n1 = parseFloat(document.getElementById("number1").value.trim());
+        var n2 = parseFloat(document.getElementById("number2").value.trim());
+        var op = document.getElementById("op").value;
+        var msg = document.getElementById("msg");
+        var resultValue = document.getElementById("resultValue");
+        if (isNaN(n1) || n1.length < 0 || isNaN(n2) || n2.length < 0) {//简单验证
+            msg.style.color = "#ff0000";
+            msg.innerHTML = "请输入数字";
+            return "error";
+        }
+        console.log(op);
+        if ("/" == op && n2 == 0) { //如果为除法,除数不能为0
+            msg.style.color = "#ff0000";
+            msg.innerHTML = "地球人都知道,除数不能为0";
+            return "error";
+        }
+        var result = calc(n1, n2, op);
+        resultValue.innerHTML = result;
+    }
+    //计算函数
+    function calc(num1, num2, oper){
+        switch (oper) {
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 -num2;
+            case '*':
+                return num1 * num2;
+            case '/':
+                return num1 / num2;
+            default:
+                return "未知操作符";
+        }
+    }
+</script>
+</body>
+</html>

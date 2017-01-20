@@ -1,0 +1,512 @@
+@charset "utf-8";
+/*初始化样式*/
+body,div,p,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,img,input,textarea,select{
+    margin:0;
+    padding:0;
+}
+input {
+    outline: none;
+}
+ul li {
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cl {
+    clear: both;
+}
+
+/*媒体查询*/
+/*当屏幕分辨率大于800px时,引用以下样式*/
+@media only screen and (min-width: 800px) {
+    .wraper-mobile{
+        display: none;
+    }
+    html {
+        height: 100px;
+    }
+    body {
+        height: 100%;
+        font: 13px "Microsoft YaHei";
+    }
+    .container-pc {
+        position: relative;
+        min-width: 810px;
+        min-height: 580px;
+    }
+
+    /*导航栏*/
+    .header {
+        height: 60px;
+        margin-bottom: 50px;
+    }
+    .header .nav {
+        position: relative;
+        width: 488px;
+        height: 60px;
+        padding: 19px 5px 0 0;
+    }
+    .header .nav a {
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        color: #000;
+        font-weight: bold;
+        margin: 0 10px;
+        text-decoration: underline;
+    }
+    .header .nav a:hover {
+        color: #2d78f4;
+    }
+
+    .setting .bd-setting{
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 76px;
+        width: 70px;
+        border: 1px solid #ccc;
+        box-shadow: 3px 3px 5px #ccc;
+    }
+    .setting .bd-setting a {
+        display: inline-block;
+        width: 100%;
+        font-weight: normal;
+        text-decoration: none;
+        text-align: center;
+        padding: 2px 0;
+        margin: 0;
+        font-size: 12px;
+    }
+    .setting .bd-setting a:hover {
+        color: #fff;
+        background-color: #2d78f4;
+    }
+    .setting .setting-icon {
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+
+        border-bottom-color: #d8d8d8;
+    }
+
+    /*更多产品*/
+    .header .nav .more {
+        display: inline-block;
+        width: 63px;
+        color: #fff;
+        background-color: dodgerblue;
+        text-decoration: none;
+        margin-right: 0;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .more-product {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        width: 85px;
+        height: 100%;
+        min-height: 680px;
+        border-left: 1px solid #ddd;
+        background: #f9f9f9;
+    }
+    .more-product ul {
+        padding: 20px 5px 0 5px;
+        text-align: center;
+    }
+    .more-product ul li {
+        position: relative;
+        height: 70px;
+        border-bottom: 1px solid #ddd;
+    }
+    .more-product ul li:first-child {
+        height: 50px;
+        /*margin-top: 5px;*/
+    }
+    .more-product ul li:last-child {
+        line-height: 50px;
+        border-bottom: 0;
+    }
+    .more-product ul li a {
+        color: #000;
+        text-decoration: none;
+    }
+    .more-product ul li a:hover {
+        text-decoration: underline;
+    }
+    .more-product li span {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin: 15px auto 5px;
+    }
+    .more-product li span.bd-one{
+        background-image:url(../images/bd-more.png);
+        background-repeat:no-repeat;
+        background-position: -74px 0;
+    }
+    .more-product li span.bd-two{
+        background-image:url(../images/bd-more.png);
+        background-repeat:no-repeat;
+        background-position: -112px 0;
+    }
+    .more-product li span.bd-three{
+        background-image:url(../images/bd-more.png);
+        background-repeat:no-repeat;
+        background-position: -36px 0;
+    }
+    .more-product li span.bd-four{
+        background-image:url(../images/bd-more.png);
+        background-repeat:no-repeat;
+        background-position: -146px 0;
+    }
+    .more-product li span.bd-five{
+        background-image:url(../images/bd-more.png);
+        background-repeat:no-repeat;
+        background-position: -182px 0;
+    }
+
+    /*正文样式 start*/
+    .container-pc .content {
+        width: 100%;
+        min-height: 400px;
+        text-align: center;
+        margin: 50px auto;
+
+    }
+    .logo img {
+        width: 270px;
+        height: 129px;
+        margin-bottom: 20px;
+    }
+    .clear{*zoom:1;}
+    .clear:after{
+        display:block;
+        content:"clear";
+        height:0; clear:both;
+        overflow:hidden;
+        visibility:hidden;
+    }
+    .box {
+        width: 596px;
+        margin: 0 auto;
+    }
+    .box > div {
+        position: relative;
+        float: left;
+    }
+    .box > div input{
+        width: 480px;
+        height: 40px;
+        padding: 0 70px 0 10px;
+        line-height: 40px;
+        border: 1px solid #eee;
+    }
+    .box > div input:hover {
+        border: 1px solid #ddd;
+    }
+    .box > div input:focus {
+        border: 1px solid #00f;
+        border-right-color: dodgerblue;
+    }
+    .box > div p {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .box > div span {
+        float: left;
+        width: 20px;
+        height: 20px;
+
+    }
+    .box > div span:first-child {
+        background: url(../images/voice.png) no-repeat;
+        position: absolute;
+        /*top: -10px;*/
+        top: 1px;
+        right: 32px;
+    }
+    .box > div span.camera {
+        background: url(../images/camera.png) no-repeat;
+        margin-left: 10px;
+        padding-left: 6px;
+        background-position: 0px 2px;
+        position: absolute;
+        top: -2px;
+        right: 4px;
+    }
+    .box > input[type=submit] {
+        float: left;
+        width: 104px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        background: #eee;
+        text-align: center;
+        background-color: dodgerblue;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        border-width: 0;
+    }
+    .box > input[type=submit]:hover {
+        background-color: royalblue;
+    }
+    /*正文 end*/
+
+
+    /*底部 start*/
+    .footer .qrcode-text p {
+        margin: 10px 0;
+    }
+    .footer {
+        /*text-align: center;*/
+        width: 660px;
+        margin: 0 auto;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        margin-left: -300px;
+        bottom: 10px;
+        font-size: 12px;
+        /*font-family: "宋体";*/
+    }
+    #qrcode {
+        display: inline-block;
+        float: left;
+    }
+    #qrcode .qrcode-item{
+        float: left;
+        margin-right: 10px;
+    }
+    #qrcode .qrcode-text {
+        float: left;
+        color: #999;
+        line-height: 23px;
+        margin: -6px 0 0 10px;
+    }
+    #qrcode .qrcode-img {
+        float: left;
+    }
+    #qrcode .qrcode-text p {
+        text-align: left;
+    }
+    #qrcode .qrcode-item-1 .qrcode-img {
+        background: url(../images/ewm1.png) 0 0 no-repeat;
+        float: left;
+    }
+    .ftConw {
+        width: 340px;
+        float: left;
+        margin-left: 20px;
+    }
+    .ftConw p {
+        line-height: 20px;
+    }
+    .footer a, footer span {
+        color: #888;
+    }
+    /*底部 end*/
+}
+
+/*移动设备样式*/
+@media only screen and (max-width: 799px) {
+
+    .container-pc {
+        display: none;
+    }
+
+    .nav-left {
+        position: relative;
+        width: 60%;
+    }
+    .nav-left img {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+    .nav-left .ssd {
+        font-size: 20px;
+        position: absolute;
+        top: 8px;
+        left: 42px;
+    }
+    .nav-left .city {
+        font-size: 12px;
+        position: absolute;
+        top: 8px;
+        left: 78px;
+    }
+    .nav-left p {
+        margin: 0;
+    }
+
+    .nav-right {
+        width: 40%;
+        position: relative;
+    }
+    .nav-right .user {
+        position: absolute;
+        top: 10px;
+        right: 45px;
+    }
+    .nav-right .tshirt {
+        position: absolute;
+        top: 7px;
+        right: 11px;
+    }
+    .wraper-mobile .mobile-main {
+        width: 100%;
+    }
+    .mobile-main .mobile-logo {
+        text-align: center;
+    }
+    .mobile-main .mobile-logo img {
+        width: 270px;
+        height: 120px;
+        margin: 20px 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .mobile-box {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .mobile-box .search {
+        position: relative;
+        width: 65%;
+        border: 1px solid #ddd;
+        margin-left: 10px;
+        display: inline-block;
+        float: left;
+        height: 40px;
+    }
+    .mobile-box .search input {
+        float: left;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 5px;
+    }
+    .mobile-box .search input[type=submit]:hover {
+        background-color: #1a76ff;
+    }
+    .mobile-box > input[type=submit] {
+        float: left;
+        width: 104px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        background: #eee;
+        text-align: center;
+        background-color: dodgerblue;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        border-width: 0;
+    }
+
+    .nav-bar{
+        clear: both;
+        width:100%;
+        height: 60px;
+        /*margin:65px auto 50px;*/
+    }
+    .nav-bar ul {
+        width:100%;
+    }
+    .nav-bar ul li{
+        float:left;
+        width:16%;
+    }
+    .nav-bar ul li a{
+        display:block;
+        width:100%;
+        height:43px;
+        text-align:center;
+        text-decoration:none;
+        color: #666;
+        font-size:14px;
+    }
+    .nav-bar ul li a:hover{
+        color:#3385ff;
+    }
+    .nav-bar ul li a span{
+        display:block;
+        margin-bottom: 5px;
+    }
+    .nav-bar .image{
+        width:22px;
+        height:22px;
+        position:relative;
+        left:50%;
+        margin-left:-11px;
+    }
+    .nav-bar .icon1{
+        background:url(../images/ns_diff_color_v2.png) no-repeat;
+        background-position: 0 -264px;
+        background-size:22px;
+    }
+    .nav-bar .icon2{
+        background:url(../images/ns_diff_color_v2.png) no-repeat;
+        background-position: 0 -396px;
+        background-size:22px;
+    }
+    .nav-bar .icon3{
+        background:url(../images/ns_diff_color_v2.png) no-repeat;
+        background-position: 0 -330px;
+        background-size:22px;
+    }
+    .nav-bar .icon4{
+        background:url(../images/ns_diff_color_v2.png) no-repeat;
+        background-position: 0 -462px;
+        background-size:22px;
+    }
+    .nav-bar .icon5{
+        background:url(../images/ns_diff_color_v2.png) no-repeat;
+        background-position: 0 -418px;
+        background-size:22px;
+    }
+    .nav-bar .icon6{
+        background:url(../images/ns_diff_color_v2.png) no-repeat;
+        background-position: 0 -308px;
+        background-size:22px;
+    }
+    
+    /*内容*/
+    .water-container .news {
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+    }
+    .news .img-box {
+        margin-bottom: 5px;
+    }
+    .news .img-box img {
+        width: 32%;
+        height: 100px;
+        margin: 0;
+    }
+
+    /*底部*/
+    .footer {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer p {
+        color: #aaa;
+    }
+}

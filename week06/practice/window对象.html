@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+</head>
+<body>
+    <button onclick="openWin();">打开窗口</button>
+    <button onclick="closeWin();">关闭窗口</button>
+    <button onclick="printWin();">打印窗口</button>
+    <br>
+    <hr>
+<script>
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    window.document.write("宽度:" + width + ",高度:" + height + "<br>");
+
+    var outerWidth = window.outerWidth;
+    var outHeight = window.outerHeight;
+    window.document.write("总宽度:" + outerWidth + ",总高度:" + outHeight + "<br>");
+
+    function openWin(){
+        window.open("http://www.baidu.com", "MyWindow", "width=300", "height=200", "left=100", "top=100");
+    }
+    function closeWin(){
+        window.close();
+    }
+    function printWin(){
+        window.print();
+    }
+</script>
+</body>
+</html>

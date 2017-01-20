@@ -1,0 +1,60 @@
+.container {
+    width: 500px;
+    margin: 100px auto;
+}
+li {
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #868686;
+    color: #fff;
+    padding: 5px;
+    margin-right: 2px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.tabin {
+    background-color: #6e6e6e;
+    border: 1px solid #6e6e6e;
+}
+.content {
+    clear: both;
+    background-color: #6e6e6e;
+    color: #fff;
+    width: 480px;
+    height: 200px;
+    padding: 20px;
+    display: none;
+}
+.current {
+    display: block;
+}
+
+
+#tabUl2 li {
+    float: left;
+    background-color: #fff;
+    color: blue;
+    padding: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+#tabUl2 .tabin {
+    background-color: #f2f6f8;
+    border: 1px solid #000;
+    border-bottom: 0;
+    position: relative;
+    z-index: 100;
+}
+#content2 {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    background-color: #f2f6f8;
+    clear: both;
+    border: 1px solid #000;
+    position: relative;
+    top: -2px;
+}

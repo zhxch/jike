@@ -1,0 +1,14 @@
+.container {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    margin: 100px auto;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.container h2 {
+    text-align: center;
+}
+.container .score-box {
+    margin-left: 70px;
+}

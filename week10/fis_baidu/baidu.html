@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下,你就知道</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/baidu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/baidu.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <!-- pc端 -->
+    <div class="container-pc">
+        <!-- 头部 start -->
+        <div class="header">
+            <div class="nav fl">
+                <a href="http://www.nuomi.com/?cid=002540" style="text-decoration: none">
+                    <span>朝阳:</span>
+                    <span class="weather-icon"></span>
+                    <span>12℃</span>
+                </a>
+                <a href="#">宝箱</a>
+                <a href="#" id="skinTag" class="skin">换肤</a>
+                <a href="#">消息(1)</a>
+            </div>
+            <div class="nav fr">
+                <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                <a href="http://news.baidu.com/">新闻</a>
+                <a href="http://www.hao123.com/">hao123</a>
+                <a href="http://map.baidu.com/">地图</a>
+                <a href="http://v.baidu.com/">视频</a>
+                <a href="http://tieba.baidu.com/">贴吧</a>
+                <a href="#" class="login">登录</a>
+                <div class="setting" id="setting">
+                    <a href="javascript:;">设置</a>
+                    <!-- 设置:点击菜单 -->
+                    <div class="bd-setting" id="bdSetting">
+                        <i class="setting-icon"></i>
+                        <a href="#">搜索设置</a>
+                        <a href="#">高级搜索</a>
+                        <a href="#">关闭预测</a>
+                        <a href="#">搜索历史</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="more" id="more">更多产品</a>
+            </div>
+        </div>
+        <div class="skin-box" id="skinItem">
+            <img src="images/4.jpg" alt="" id="pic1"/>
+            <img src="images/5.jpg" alt="" id="pic2"/>
+            <img src="images/2.jpg" alt="" id="pic3"/>
+        </div>
+        <div id="moreProduct" class="more-product">
+            <ul>
+                <li>
+                    更多产品
+                </li>
+                <li>
+                    <a href="http://music.baidu.com/" target="_blank"><span class="bd-one"></span>音乐</a>
+                </li>
+                <li>
+                    <a href="http://image.baidu.com/" target="_blank"><span class="bd-two"></span>图片</a>
+                </li>
+                <li>
+                    <a href="http://zhidao.baidu.com/" target="_blank"><span class="bd-three"></span>知道</a>
+                </li>
+                <li>
+                    <a href="http://wenku.baidu.com/" target="_blank"><span class="bd-four"></span>文库</a>
+                </li>
+                <li>
+                    <a href="http://top.baidu.com/" target="_blank"><span class="bd-five"></span>风云榜</a>
+                </li>
+                <li>
+                    <a href="https://www.baidu.com/more/" target="_blank">全部产品&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 头部 end -->
+
+        <!-- 主体 start -->
+        <div class="content cl">
+            <div class="logo">
+                <img src="images/bd_logo.png" alt="百度一下,你就知道">
+            </div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="box clear">
+                    <div>
+                        <p>
+                            <span class="voice"></span>
+                            <span class="camera"></span>
+                        </p>
+                        <input type="text" name="wd" id="wd" placeholder="百度一下,你就知道">
+                    </div>
+                    <input type="submit" value="百度一下">
+                </div>
+            </form>
+            <div class="main cl">
+                <div class="main-tab">
+                    <ul id="tabUl">
+                        <li class="tabin">我的关注</li>
+                        <li>推荐</li>
+                        <li>导航</li>
+                        <li>视频</li>
+                        <li>购物</li>
+                    </ul>
+
+                    <div class="tab-content current">
+                        <div class="center-content">
+                            <div class="mblock-title">
+                                <em></em>
+                                <span>我的导航(50)</span>
+                            </div>
+                            <div class="dir-item">
+                                <div class="dir-name">
+                                    <span class="name-text">综合</span>
+                                </div>
+                                <div class="dir-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.sohu.com">
+                                                <img src="images/95505.png" alt="搜狐">
+                                                <span>搜狐</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.itcast.com">
+                                                <img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/80990.png" alt="传智播客">
+                                                <span>传智播客</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.hotmail.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95623.png" alt="微软邮箱登录">
+                                                <span>微软邮箱登录</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://mail.qq.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95519.png" alt="QQ邮箱">
+                                                <span>QQ邮箱</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.wozhongla.com">
+                                                <img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/10346.png" alt="我中啦彩票网">
+                                                <span>我中啦彩票网</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://mail.google.com">
+                                                <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/8509.png?1" alt="Gmail邮箱">
+                                                <span>Gmail邮箱</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://map.baidu.com">
+                                                <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95561.png" alt="百度地图">
+                                                <span>百度地图</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.126.com">
+                                                <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95521.png" alt="126邮箱">
+                                                <span>126邮箱</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://zhaopin.com/beijing">
+                                                <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/10668.png" alt="智联招聘">
+                                                <span>智联招聘</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.51job.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95543.png" alt="前程无忧">
+                                                <span>前程无忧</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.58.com">
+                                                <img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/95510.png" alt="58同城">
+                                                <span>58同城</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.12306.cn">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/81407.png" alt="铁路服务">
+                                                <span>铁路服务</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.gjjx.com.cn">
+                                                <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/8481.png" alt="公交驾校">
+                                                <span>公交驾校</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://autohome.com.cn">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95512.png" alt="汽车之家">
+                                                <span>汽车之家</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.apple.com.cn">
+                                                <img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/7618.png" alt="苹果官网">
+                                                <span>苹果官网</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.bjeea.cn">
+                                                <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/7733.png" alt="北京自考办">
+                                                <span>北京自考办</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.163.com">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95504.png" alt="网易">
+                                                <span>网易</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dir-item">
+                                <div class="dir-name">
+                                    <span class="name-text">社区</span>
+                                </div>
+                                <div class="dir-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://news.163.com">
+                                                <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95581.png" alt="网易新闻">
+                                                <span>搜狐</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://qzone.qq.com">
+                                                <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95499.png" alt="QQ空间">
+                                                <span>QQ空间</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.renren.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95495.png" alt="人人网">
+                                                <span>微软邮箱登录</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.qiushibaike.com">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95544.png" alt="糗事百科">
+                                                <span>糗事百科</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.weibo.com">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95488.png" alt="新浪微博">
+                                                <span>新浪微博</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.csdn.net">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/712.png" alt="CSDN">
+                                                <span>CSDN</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.douban.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/8215.png" alt="豆瓣">
+                                                <span>豆瓣</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dir-item">
+                                <div class="dir-name">
+                                    <span class="name-text">购物</span>
+                                </div>
+                                <div class="dir-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.jd.com">
+                                                <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95475.png" alt="京东商城">
+                                                <span>京东商城</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://qzone.qq.com">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/10560.png" alt="1号店">
+                                                <span>1号店</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.vancl.com">
+                                                <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/10251.png" alt="凡客诚品">
+                                                <span>凡客诚品</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.taobao.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95487.png" alt="淘宝网">
+                                                <span>淘宝网</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.weibo.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95711.png" alt="聚美优品">
+                                                <span>聚美优品</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.xiaomi.com">
+                                                <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95516.png" alt="小米官网">
+                                                <span>小米官网</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.vipshop.com">
+                                                <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95587.png" alt="唯品会">
+                                                <span>唯品会</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.vipshop.com">
+                                                <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95493.png" alt="亚马逊">
+                                                <span>亚马逊</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.sephora.com">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/9824.ico" alt="丝芙兰">
+                                                <span>丝芙兰</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.tmall.com">
+                                                <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95500.png" alt="天猫商城">
+                                                <span>天猫商城</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dir-item">
+                                <div class="dir-name">
+                                    <span class="name-text">理财</span>
+                                </div>
+                                <div class="dir-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.icbc.com.cn">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3" alt="工商银行">
+                                                <span>工商银行</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cmbchina.com">
+                                                <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95556.png" alt="招商银行">
+                                                <span>招商银行</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://auth.alipay.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/7591.png" alt="支付宝">
+                                                <span>支付宝</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dir-item">
+                                <div class="dir-name">
+                                    <span class="name-text">工具</span>
+                                </div>
+                                <div class="dir-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.icbc.com.cn">
+                                                <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95588.png" alt="">
+                                                <span>谷歌地图</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cmbchina.com">
+                                                <img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/95514.png" alt="">
+                                                <span>美图秀秀</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://auth.alipay.com">
+                                                <img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/6010.png" alt="">
+                                                <span>中华万年历</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.icbc.com.cn">
+                                                <img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/95514.png" alt="">
+                                                <span>韵达快递查询</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cmbchina.com">
+                                                <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/56152.gif" alt="">
+                                                <span>邮政包裹查询</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://auth.alipay.com">
+                                                <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/30031.png" alt="">
+                                                <span>汇通快递查询</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cmbchina.com">
+                                                <img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/95514.png" alt="">
+                                                <span>申通快递查询</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://auth.alipay.com">
+                                                <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95763.png" alt="">
+                                                <span>圆通快递</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dir-item">
+                                <div class="dir-name">
+                                    <span class="name-text">影视</span>
+                                </div>
+                                <div class="dir-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.icbc.com.cn">
+                                                <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95489.png" alt="">
+                                                <span>优酷</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cmbchina.com">
+                                                <img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/95574.png" alt="">
+                                                <span>搜狐视频</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://auth.alipay.com">
+                                                <img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/95502.png" alt="">
+                                                <span>爱奇艺</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="center-content">
+                            <div class="news-list">
+                                <div class="left-line gole"></div>
+                                <div class="tips-content gole">
+                                    <i class="tips-icon"></i>
+                                    <span>以下信息根据您的兴趣推荐</span>
+                                </div>
+                                <div class="right-line gole"></div>
+
+                                <div class="news-item">
+                                    <ul>
+                                        <li class="cl">
+                                            <a href="#">
+                                                <div class="left-pic fl">
+                                                    <img src="images/1.jpeg" alt="">
+                                                </div>
+                                                <div class="right-info fl">
+                                                    <h4 style="color: #000;">
+                                                        郭艾伦复出辽宁轻取吉林两连胜 韩德君19+18
+                                                    </h4>
+                                                    <p style="color: #999;">
+                                                        腾讯体育 11-13 21:23
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cl">
+                                            <a href="#">
+                                                <div class="left-pic fl">
+                                                    <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1627619472,2951939017&fm=80&w=179&h=119&img.JPEG" alt="">
+                                                </div>
+                                                <div class="right-info fl">
+                                                    <h4 style="color: #000;">
+                                                        跑了12年龙套45岁凭《疯狂的石头》走红 他出道多年毫无绯闻
+                                                    </h4>
+                                                    <p style="color: #999;">
+                                                        健康网 11-14 13:57
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cl">
+                                            <a href="#">
+                                                <div class="left-pic fl">
+                                                    <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=983413050,549919476&fm=80&w=179&h=119&img.JPEG" alt="">
+                                                </div>
+                                                <div class="right-info fl">
+                                                    <h4 style="color: #000;">
+                                                        国乒7大暴脾气居然有张怡宁 你怎么看？
+                                                    </h4>
+                                                    <p style="color: #999;">
+                                                        搜狐体育 11-11 23:56
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hot-news">
+                                <div class="hot-news-head">
+                                    实时热点
+                                </div>
+                                <div class="hot-news-item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">探访辽宁舰老兵</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">韩警再扫射中渔船</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">新西兰8.0级地震</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">张伦硕办答谢宴</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">老大爷骂哭司机</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中国第4次单身潮</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">李晓杰突发重病</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">歼十女飞行员牺牲</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">老人绝食288天</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">朴槿惠整容门</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">的哥找零钱时猝死</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">杨幂曾探班刘恺威</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">校园贷乱象调查</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">高楼电梯全关停</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">偷听电话冒领快递</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">撞人判死刑腿吓软</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="center-content">
+                            <div class="nav-head cl"><h4>猜你喜欢</h4></div>
+                            <div class="nav-item">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1" alt="百度糯米">
+                                            <span>百度糯米</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://qzone.qq.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/10560.png" alt="1号店">
+                                            <span>1号店</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.vancl.com">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/10251.png" alt="凡客诚品">
+                                            <span>凡客诚品</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.taobao.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95487.png" alt="淘宝网">
+                                            <span>淘宝网</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.weibo.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95711.png" alt="聚美优品">
+                                            <span>聚美优品</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.xiaomi.com">
+                                            <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95516.png" alt="小米官网">
+                                            <span>小米官网</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.vipshop.com">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95587.png" alt="唯品会">
+                                            <span>唯品会</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.vipshop.com">
+                                            <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95493.png" alt="亚马逊">
+                                            <span>亚马逊</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.sephora.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/9824.ico" alt="丝芙兰">
+                                            <span>丝芙兰</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.tmall.com">
+                                            <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95500.png" alt="天猫商城">
+                                            <span>天猫商城</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95517.png" alt="当当网">
+                                            <span>当当网</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://news.163.com">
+                                            <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95581.png" alt="网易新闻">
+                                            <span>搜狐</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://qzone.qq.com">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95499.png" alt="QQ空间">
+                                            <span>QQ空间</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.renren.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95495.png" alt="人人网">
+                                            <span>微软邮箱登录</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.qiushibaike.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95544.png" alt="糗事百科">
+                                            <span>糗事百科</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.weibo.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95488.png" alt="新浪微博">
+                                            <span>新浪微博</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.csdn.net">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/712.png" alt="CSDN">
+                                            <span>CSDN</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.douban.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/8215.png" alt="豆瓣">
+                                            <span>豆瓣</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1" alt="百度糯米">
+                                            <span>百度糯米</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://qzone.qq.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/10560.png" alt="1号店">
+                                            <span>1号店</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.vancl.com">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/10251.png" alt="凡客诚品">
+                                            <span>凡客诚品</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.taobao.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95487.png" alt="淘宝网">
+                                            <span>淘宝网</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.weibo.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95711.png" alt="聚美优品">
+                                            <span>聚美优品</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.xiaomi.com">
+                                            <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95516.png" alt="小米官网">
+                                            <span>小米官网</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.vipshop.com">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95587.png" alt="唯品会">
+                                            <span>唯品会</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.vipshop.com">
+                                            <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95493.png" alt="亚马逊">
+                                            <span>亚马逊</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.sephora.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/9824.ico" alt="丝芙兰">
+                                            <span>丝芙兰</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.tmall.com">
+                                            <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95500.png" alt="天猫商城">
+                                            <span>天猫商城</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95517.png" alt="当当网">
+                                            <span>当当网</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://news.163.com">
+                                            <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95581.png" alt="网易新闻">
+                                            <span>搜狐</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://qzone.qq.com">
+                                            <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95499.png" alt="QQ空间">
+                                            <span>QQ空间</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.renren.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95495.png" alt="人人网">
+                                            <span>微软邮箱登录</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.qiushibaike.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95544.png" alt="糗事百科">
+                                            <span>糗事百科</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.weibo.com">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95488.png" alt="新浪微博">
+                                            <span>新浪微博</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.csdn.net">
+                                            <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/712.png" alt="CSDN">
+                                            <span>CSDN</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.douban.com">
+                                            <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/8215.png" alt="豆瓣">
+                                            <span>豆瓣</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="center-content">
+                            <div class="video-item">
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2168286654,1300041673&amp;fm=58">
+                                    </a>
+                                    <p>
+                                        <span>挑战不可能</span><br>
+                                        <span>得分:6.8</span>
+                                    </p>
+                                </div>
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3681839907,1186218441&fm=58">
+                                    </a>
+                                    <p>
+                                        <span>爱丽丝梦游仙境</span><br>
+                                        <span>得分:7.0</span>
+                                    </p>
+                                </div>
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4095303249,1827377298&fm=58">
+                                    </a>
+                                    <p>
+                                        <span>爱情保卫战</span><br>
+                                        <span>得分:7.0</span>
+                                    </p>
+                                </div>
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3466689900,1133230580&fm=58">
+                                    </a>
+                                    <p>
+                                        <span>僵尸新娘</span><br>
+                                        <span>得分:8.1</span>
+                                    </p>
+                                </div>
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2168286654,1300041673&amp;fm=58">
+                                    </a>
+                                    <p>
+                                        <span>挑战不可能</span><br>
+                                        <span>得分:6.8</span>
+                                    </p>
+                                </div>
+
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3681839907,1186218441&fm=58">
+                                    </a>
+                                    <p>
+                                        <span>爱丽丝梦游仙境</span><br>
+                                        <span>得分:7.0</span>
+                                    </p>
+                                </div>
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4095303249,1827377298&fm=58">
+                                    </a>
+                                    <p>
+                                        <span>爱情保卫战</span><br>
+                                        <span>得分:7.0</span>
+                                    </p>
+                                </div>
+                                <div class="video-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3466689900,1133230580&fm=58">
+                                    </a>
+                                    <p>
+                                        <span>僵尸新娘</span><br>
+                                        <span>得分:8.1</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="center-content">
+                            <div class="shopping-item">
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/42a98226cffc1e17378082074390f603738de9cd.jpg">
+                                    </a>
+                                    <p>
+                                        <span>不锈钢保温壶</span><br>
+                                        <span>劲爆热销 返现40%</span>
+                                    </p>
+                                </div>
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/58ee3d6d55fbb2fb43604024464a20a44623dcb8.jpg">
+                                    </a>
+                                    <p>
+                                        <span>瑞士军刀双肩背</span><br>
+                                        <span>百度用户 只要99.4元</span>
+                                    </p>
+                                </div>
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/">
+                                        <img width="195px" height="267px" src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/908fa0ec08fa513ddda874e8346d55fbb2fbd982.jpg">
+                                    </a>
+                                    <p>
+                                        <span>天山雪莲果8斤包邮</span><br>
+                                        <span>百度用户 只需要18.9元</span>
+                                    </p>
+                                </div>
+                                <div class="shopping-col">
+                                    <div class="shopping-top">
+                                        <h4>单身不怕 零食相伴</h4>
+                                        <p class="sale">一元疯抢 五折封顶 买一赠一</p>
+                                        <a class="shopping-tips" href="#">去看看</a>
+                                    </div>
+                                    <div class="shopping-bottom">
+                                        <h4>返利商城</h4>
+                                        <ul>
+                                            <li><a href="#">京东商城</a></li>
+                                            <li><a href="#">百度糯米</a></li>
+                                            <li><a href="#">1号店</a></li>
+                                            <li><a href="#">当当网</a></li>
+                                            <li><a href="#">蘑菇街</a></li>
+                                            <li><a href="#">唯品会</a></li>
+                                            <li><a href="#">天猫</a></li>
+                                            <li><a href="#">苏宁易购</a></li>
+                                            <li><a href="#">国美在线</a></li>
+                                            <li><a href="#">更多</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/" >
+                                        <img class="shopping-tag" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/scrop%3D273%3Bq%3D100/sign=87aa7dfab112c8fcb0adb1928c3ea072/3c6d55fbb2fb4316980375a028a4462308f7d3c8.jpg">
+                                        <p class="tag-p">
+                                            camkids童装 青少年羽绒服 男童冬装外套 儿童
+                                        </p>
+                                        <p class="tag-p price">
+                                            ¥359
+                                        </p>
+                                        <p class="fan-price">
+                                            <span>-178.42</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/" >
+                                        <img class="shopping-tag" src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/scrop%3D273%3Bq%3D100/sign=4eaec8e24934970a432d5770e5f7e3ff/1c950a7b02087bf4ecac5724fad3572c10dfcfbf.jpg">
+                                        <p class="tag-p">
+                                            干果礼盒坚果大礼包零食年货特产礼盒装吉祥六宝 北京瑞
+                                        </p>
+                                        <p class="tag-p price">
+                                            ¥179
+                                        </p>
+                                        <p class="fan-price">
+                                            <span>-81.71</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/" >
+                                        <img class="shopping-tag" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/scrop%3D273%3Bq%3D100/sign=bc3b85cc6859252da7495a5b44a6310c/7e3e6709c93d70cf5e05cddbf0dcd100bba12b6c.jpg">
+                                        <p class="tag-p">
+                                            派滋带麦线控全兼容入耳式手机耳机适用于小米5红米no
+                                        </p>
+                                        <p class="tag-p price">
+                                            ¥29.9
+                                        </p>
+                                        <p class="fan-price">
+                                            <span>-16.74</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="shopping-col">
+                                    <a href="http://tv.cctv.com/lm/tzbkn/" >
+                                        <img class="shopping-tag" src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/scrop%3D273%3Bq%3D100/sign=4028643ed909b3deefe1a337bc825eb6/8ad4b31c8701a18b91b0d119962f07082838fe09.jpg">
+                                        <p class="tag-p">
+                                            舒特商务正装男士皮鞋 男士内增高6CM皮鞋鳄鱼纹尖头
+                                        </p>
+                                        <p class="tag-p price">
+                                            ¥99
+                                        </p>
+                                        <p class="fan-price">
+                                            <span>-41.58</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体 end -->
+        <!-- 底部 start-->
+
+        <div class="footer">
+            <div id="qrcode">
+                <div class="qrcode-item qrcode-item-1">
+                    <div class="qrcode-img">
+                        <img src="images/ewm1.png" alt="">
+                    </div>
+                    <div class="qrcode-text"><p>
+                        <b>手机百度</b>
+                    </p>
+                        <p>
+                            <span>快人一步</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="qrcode-item qrcode-item-2">
+                    <div class="qrcode-img">
+                        <img src="images/ewm1.png" alt="">
+                    </div>
+                    <div class="qrcode-text">
+                        <p>
+                            <b>百度糯米</b>
+                        </p>
+                        <p>
+                            <span>一元大餐</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="ftConw" class="ftConw">
+                <p id="lh">
+                    <a id="setf" href="//www.baidu.com/cache/sethelp/help.html" target="_blank">
+                        <span>把百度设为主页</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://home.baidu.com">关于百度</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                </p>
+                <p id="cp">©2016&nbsp;Baidu&nbsp;
+                    <a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+                    <a href="http://jianyi.baidu.com/" class="cp-feedback">意见反馈</a>&nbsp;
+                    <span>京ICP证030173号</span>&nbsp;<i class="c-icon-icrlogo"></i>
+                </p>
+                <p>
+                    <a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                        <i class="c-icon-jgwablogo"></i>京公网安备11000002000001号
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- 底部 end-->
+        <div id="goTop" class="top">
+            <img src="images/Top.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 移动端 -->
+    <div class="container wraper-mobile">
+        <!-- 头部 start -->
+        <nav role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="fl nav-left">
+                        <a href="#"><img src="images/cloudy.png" alt="weather" width="30px" height="30px"></a>
+                        <a href="#" class="ssd">18°</a>
+                        <a href="#" class="city">
+                            <p>北京</p>
+                            <p>空气 65</p>
+                        </a>
+                    </div>
+                    <div class="fr nav-right">
+                        <a href="#" class="user"><img src="images/user.jpg" alt="user" width="25px" height="20px"></a>
+                        <a href="#" class="tshirt"><img src="images/tshirt.png" alt="tshirt" width="30px" height="30px"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-main cl">
+            <div class="mobile-logo">
+                <img src="images/bd_logo.png" alt="百度一下,你就知道">
+            </div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="mobile-box clear">
+                    <div class="search">
+                        <input type="text" name="wd">
+                    </div>
+                    <input type="submit" value="百度一下">
+                </div>
+            </form>
+        </div>
+
+        <div class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="image icon1"></span>
+                        <span class="text">关注</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon2"></span>
+                        <span class="text">新闻</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon3"></span>
+                        <span class="text">小说</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon4"></span>
+                        <span class="text">视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon5"></span>
+                        <span class="text">糯米</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="image icon6"></span>
+                        <span class="text">地图</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="water-container">
+            <div class="news">
+                <h3>员工以辞职威胁老板要求分800万分红,老板一句话令他发狂</h3>
+                <div class="img-box">
+                    <img src="images/pic1.jpeg" alt="">
+                    <img src="images/pic2.jpeg" alt="">
+                    <img src="images/pic3.jpeg" alt="">
+                </div>
+                <div class="time">互联网 04:30</div>
+            </div>
+
+            <div class="news">
+                <h3>员工以辞职威胁老板要求分800万分红,老板一句话令他发狂</h3>
+                <div class="img-box">
+                    <img src="images/pic1.jpeg" alt="">
+                    <img src="images/pic2.jpeg" alt="">
+                    <img src="images/pic3.jpeg" alt="">
+                </div>
+                <div class="time">互联网 04:30</div>
+            </div>
+            <div class="news">
+                <h3>员工以辞职威胁老板要求分800万分红,老板一句话令他发狂</h3>
+                <div class="img-box">
+                    <img src="images/pic1.jpeg" alt="">
+                    <img src="images/pic2.jpeg" alt="">
+                    <img src="images/pic3.jpeg" alt="">
+                </div>
+                <div class="time">互联网 04:30</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>用户反馈</p>
+            <p>使用百度前必读 Baidu 京ICP证030173号</p>
+            <p>京公网安备11000002000001号</p>
+        </div>
+
+    </div>
+</body>
+</html>

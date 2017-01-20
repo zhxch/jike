@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个javascript程序</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 300px;
+            padding: 10px;
+            margin: 100px auto;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container .score-box {
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>成绩等级查询</h2>
+        <div class="score-box">
+            <label for="score">请输入您的成绩:</label>
+            <input type="text" id="score">
+            <input type="button" value="查询等级" onclick="searchScore();">
+            <p id="scoreLevel"></p>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+    function searchScore(){
+        var level;
+        var scoreLevel = document.getElementById("scoreLevel");
+        var score = document.getElementById("score").value;
+        if (isNaN(score) || score.length <= 0 || score < 0 || score > 100) {
+            scoreLevel.innerHTML = "请输入0~100之间的整数";
+            return "error";
+        }
+        var tempScore = parseInt(score / 10);
+        switch (tempScore) {
+            case 10:
+            case 9: level = "厉害了我的哥,您是1等生";
+                break;
+            case 8: level = "您是2等生";
+                break;
+            case 7: level = "您是3等生";
+                break;
+            case 6: level = "您是4等生";
+                break;
+            case 5: level = "您是5等生";
+                break;
+            case 4: level = "您是6等生";
+                break;
+            case 3: level = "您是7等生";
+                break;
+            case 2: level = "您是8等生";
+                break;
+            case 1: level = "您是9等生";
+                break;
+            case 0: level = "亲啊,要努力了,您是10等生";
+                break;
+            case "": level = "请输入您的成绩";
+                break;
+        }
+        document.getElementById("scoreLevel").innerHTML = level;
+    }
+</script>
+</body>
+</html>

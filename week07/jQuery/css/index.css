@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    pading: 0;
+}
+.test {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+}
+p {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    cursor: pointer;
+}

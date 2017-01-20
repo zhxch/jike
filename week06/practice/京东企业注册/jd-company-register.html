@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东企业注册</title>
+    <style type="text/css">
+        .jd-register {
+            width: 800px;
+            padding: 20px;
+            margin: 0 auto;
+            border: 1px solid #f2f2f2;
+        }
+        .jd-register h1 {
+            text-align: center;
+        }
+        .jd-register label {
+            font-size: 14px;
+            display: inline-block;
+            width: 150px;
+            height: 38px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .jd-register input {
+            width: 250px;
+            height: 36px;
+            outline-style: inherit;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+        }
+        .jd-register input:focus {
+            border: 1px solid #0f0;
+
+        }
+        .jd-register input:focus .reg-tips {
+            display: inline-block;
+            background-color: rgb(247, 247, 247);
+        }
+        .jd-register div {
+            padding: 5px 0;
+        }
+        .jd-register .reg-tips {
+            display: none;
+            width: 250px;
+            height: 36px;
+            color: #f00;
+            line-height: 36px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            margin-left: 10px;
+            background-color: rgb(247, 247, 247);
+            vertical-align:middle;
+            font-size: 14px;
+        }
+        .jd-register .register-btn {
+            width: 272px;
+            height: 38px;
+            border: 1px solid #f00;
+            background: #f00;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 172px;
+            cursor: pointer;
+            outline-style: inherit;
+        }
+        .jd-register b {
+            color: #f00;
+            padding-right: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jd-register">
+    <form action="" id="myForm">
+        <h1>京东企业注册</h1>
+        <div>
+            <label for="username"><b>*</b>用户名:</label>
+            <input type="text" id="username" name="username">
+            <span class="reg-tips" id="username-success"></span>
+            <span class="reg-tips" id="username-error"></span>
+        </div>
+        <div>
+            <label for="username"><b>*</b>请设置密码:</label>
+            <input type="text" id="password" name="password">
+        </div>
+        <div>
+            <label for="username"><b>*</b>请确认密码:</label>
+            <input type="text" id="rePassword" name="rePassword">
+        </div>
+        <button type="button" class="register-btn" onclick="register();">立即注册</button>
+    </form>
+</div>
+
+<script type="text/javascript">
+    function register(){
+        var username = document.getElementById("username").value;
+        var usernameSuccess = document.getElementById("username-success");
+        var usernameError = document.getElementById("username-error");
+        if(/^[A-Za-z0-9_\\-]{4,20}$/.test(username)){
+            usernameError.style.display = "none";
+            usernameSuccess.style.display = "inline-block";
+            usernameSuccess.style.color = "#0f0";
+            usernameSuccess.innerHTML = "用户名可用";
+        }else{
+            usernameSuccess.style.display = "none";
+            usernameError.style.display = "inline-block";
+            usernameError.innerHTML = "4-20位字符,支持汉字,字母,数字 _ -组合";
+        }
+    }
+
+
+</script>
+</body>
+</html>

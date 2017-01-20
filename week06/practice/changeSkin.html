@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更换主题</title>
+</head>
+<body onload="document.bgColor='lime'; return true;">
+<a href="javascript:void(0);"onmouseover="randombackground()"><font size="5" face="宋体">碰我改变背景颜色</font></a>
+<div style="float:right;margin-right:20px;">
+    <a href="javascript:void(0);"><img class="button1"onClick="javascript:document.body.style.background='url(images/bg/1.jpg)'"></a>
+    <a href="javascript:void(0);"><img class="button2"onClick="javascript:document.body.style.background='url(images/bg/2.jpg)'"></a>
+    <a href="javascript:void(0);"><img class="button3"onClick="javascript:document.body.style.background='url(images/bg/3.jpg)'"></a>
+    <a href="javascript:void(0);"><img class="button4"onClick="javascript:document.body.style.background='url(images/bg/4.jpg)'"></a>
+    <a href="javascript:void(0);"><img class="button5"onClick="javascript:document.body.style.background='url(images/bg/5.jpg)'"></a>
+    <a href="javascript:void(0);"><img class="button6"onClick="javascript:document.body.style.background='url(images/bg/6.jpg)'"></a>
+</div>
+
+<select onChange="document.bgColor=this.options[this.selectedIndex].value">
+<option value="#C0C0C0">灰色的
+<option value="BLACK">黑的色
+<option value="d2c6ff">淡紫蓝
+<option value="feefc7">太阳黄
+<option value="ffd2c6">淡红橘
+<option value="c7fed8">苹果绿
+<option value="80ff80">草原绿
+<option value="#C1BC59">橄榄色
+<option value="#7BC7FF">天空蓝
+<option value="#AEDFD3">蓝绿色
+<option value="#508B7D">墨绿色
+<option value="#F0F0F0">米白色
+    </select>
+
+<script>
+    org_Color=document.bgColor.substring(1.10)
+</script>
+<form>
+    <input type="button" value="淡黄色背景"onClick="document.bgColor='#feffc6'">
+    <input type="button" value="浅蓝色背景"onClick="document.bgColor='#c6fffe'">
+    <input type="button" value="粉红色背景"onClick="document.bgColor='#ffc9c6'">
+    <input type="button" value="墨绿色背景"onClick="document.bgColor='#508b7d'">
+    <input type="button" value="天蓝色背景"onClick="document.bgColor='#7BC7FF'">
+    <input type="button" value="米白色背景"onClick="document.bgColor='#f0f0f0'">
+</form>
+
+<script language="Javascript">
+<!--
+function backcolor(form){
+temp = ""
+for (var i = 0; i < 16; i++) {
+temp = form.color[i].value
+if (form.color[i].checked){ document.bgColor = temp }
+}
+}
+function randombackground(){
+document.bgColor = getColor()
+}
+function getColor(){
+currentdate = new Date()
+backgroundcolor = currentdate.getSeconds()
+if (backgroundcolor > 44)
+backgroundcolor = backgroundcolor - 45
+else if (backgroundcolor > 29)
+backgroundcolor = backgroundcolor - 30
+else if (backgroundcolor > 15)
+backgroundcolor = backgroundcolor - 16
+if (backgroundcolor == 0 )
+return "olive";
+else if (backgroundcolor == 1 )
+return "teal";
+else if (backgroundcolor == 2 )
+return "red";
+else if (backgroundcolor == 3 )
+return "blue";
+else if (backgroundcolor == 4 )
+return "maroon";
+else if (backgroundcolor == 5 )
+return "navy";
+else if (backgroundcolor == 6 )
+return "lime";
+else if (backgroundcolor == 7 )
+return "fuschia";
+else if (backgroundcolor == 8 )
+return "green";
+else if (backgroundcolor == 9 )
+return "purple";
+else if (backgroundcolor == 10 )
+return "gray";
+else if (backgroundcolor == 11 )
+return "yellow";
+else if (backgroundcolor == 12 )
+return "aqua";
+else if (backgroundcolor == 13 )
+return "black";
+else if (backgroundcolor == 14 )
+return "white";
+else if (backgroundcolor == 15 )
+return "silver";
+}
+// -->
+</script>
+
+</body>
+</html>

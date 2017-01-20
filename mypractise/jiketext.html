@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院前端测试页</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        /*头部 start*/
+        header {
+            width: 100%;
+            height: 56px;
+            padding: 0 20px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, .9);
+        }
+        header .logoarea.narrow {
+            width: 947px;
+            margin: 0 auto;
+        }
+        img {
+            vertical-align: middle;
+        }
+        header img {
+            margin: 0;
+        }
+        header .self-logo {
+            height: 46px;
+            margin-top: 5px;
+        }
+        header .company-logo {
+            margin-left: 20px;
+            max-height: 46px;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-left: 1px solid #ccd1d9;
+        }
+        /*头部 end*/
+        /*主要内容 start*/
+        .sets-wrap {
+            position: absolute;
+            min-height: 100%;
+            height: auto;
+            overflow: hidden;
+            width: 100%;
+        }
+        .main-content {
+            position: relative;
+            margin-top: 56px;
+            padding-bottom: 100px;
+        }
+        .container {
+            padding-left: 10%;
+            width: 1170px;
+        }
+        .container {
+            padding: 0 15px;
+            margin: 0 auto;
+
+        }
+        .row {
+            margin: 0 -15px;
+        }
+        .paper-title {
+            border-bottom: 1px solid #d9dddf;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        .pt30 {
+            padding-top: 30px;
+        }
+        /*主要内容 end*/
+    </style>
+</head>
+<body>
+    <!-- 头部 start-->
+    <header>
+        <div class="logoarea narrow">
+            <img src="images/logo_300_100.png" alt="" class="self-logo">
+            <img src="images/jkxy-logo.png" alt="" class="company-logo">
+        </div>
+    </header>
+    <!-- 头部 end-->
+    <!-- 主要内容 start -->
+    <div class="sets-wrap">
+        <div class="main-content">
+            <div class="container mt65">
+                <div class="paperInfo row">
+                    <div class="paper-title pt30">
+                        <div>
+                            您好,欢迎参加 极客学院web前端入门水平测试 ,请填写身份信息
+                        </div>
+                    </div>
+                </div>
+                <div class="loginArea userInfo row">
+                    <form action="form-horizontal">
+                        <label>
+                            姓名 <input type="text" name="userName" required>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主要内容 end -->
+</body>
+</html>

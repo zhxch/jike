@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab切换</title>
+    <link rel="stylesheet" href="css/initial.css">
+    <link rel="stylesheet" href="css/mytab.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/mytab.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul id="tabUl">
+            <li class="tabin">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+
+        <div class="content current">
+            内容1
+        </div>
+        <div class="content">
+            内容2
+        </div>
+        <div class="content">
+            内容3
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <ul id="tabUl2">
+            <li class="tabin">装载完整页面</li>
+            <li>装载部分页面</li>
+            <li>装载网络数据</li>
+        </ul>
+        <div id="content2">
+            <div id="realContent"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/*去除点击按钮时蓝色边框*/
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+}

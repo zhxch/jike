@@ -1,0 +1,23 @@
+.container {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    margin: 90px auto;
+    border: 1px solid #ccc;
+}
+.container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+button {
+    width: 70px;
+    height: 40px;
+}
+.container .rv {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 20px;
+    color: #0000ff;
+    vertical-align: middle;
+}

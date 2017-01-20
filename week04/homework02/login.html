@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>管理系统-登录</title>
+    <link rel="stylesheet" href="../百度首页/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="login">
+    <div class="container">
+        <div class="row">
+            <!-- pc -->
+            <div class="col-md-4 col-md-offset-4 hidden-sm hidden-xs">
+                <form action="" method="post" role="form" class="form">
+                    <div class="form-group">
+                        <label for="username" class="sr-only">username</label>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-user"></span>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                            <input type="text" id="password" name="password" class="form-control" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox"> 记住我
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn btn-default btn-block" href="index.html" role="button">登 录</a>
+                        <!--<button type="submit" class="btn btn-default btn-block">Sign in</button>-->
+                    </div>
+                </form>
+            </div>
+
+            <!-- 移动设备 -->
+            <div class="col-sm-12 col-xs-12 hidden-md hidden-lg">
+                <form action="" method="post" role="form" class="form">
+                    <div class="form-group">
+                        <label for="username2" class="sr-only">username</label>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-user"></span>
+                            <input type="text" id="username2" name="username" class="form-control" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2" class="sr-only">password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                            <input type="text" id="password2" name="password" class="form-control" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox"> 记住我
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn btn-default btn-block" href="index.html" role="button">登 录</a>
+                        <!--<button type="submit" class="btn btn-default btn-block">Sign in</button>-->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

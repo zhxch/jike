@@ -1,0 +1,272 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+/*整体设置 start*/
+body {
+  background-color: #eee;
+}
+/*整体设置 end*/
+.container {
+  width: 1000px;
+  background-color: #fff;
+  margin: 30px auto;
+}
+.header {
+  height: 250px;
+  overflow: hidden;
+  zoom: 1;
+}
+.header .leftPart {
+  float: left;
+  width: 300px;
+  height: 210px;
+  margin: 40px 100px 0 0;
+}
+.header .leftPart .busNumber {
+  width: 300px;
+  height: 150px;
+  line-height: 150px;
+  background-color: #ff3333;
+  color: #fff;
+  text-align: center;
+  font-size: 120px;
+}
+.header .leftPart .busTime {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header .leftPart .busTime .earlyTime {
+  margin-right: 30px;
+}
+.header .stopCss {
+  font-size: 36px;
+  text-align: center;
+  color: #006633;
+  transform: scale(1, 1.5);
+  font-weight: 700;
+}
+.header .rightPart {
+  float: right;
+  width: 600px;
+  height: 210px;
+  margin-top: 40px;
+}
+.header .rightPart .busStop {
+  width: 400px;
+  height: 100px;
+  padding: 0 100px;
+}
+.header .rightPart .busStop .ch-stop {
+  height: 70px;
+  line-height: 70px;
+  font-size: 36px;
+  text-align: center;
+  color: #006633;
+  transform: scale(1, 1.5);
+  font-weight: 700;
+}
+.header .rightPart .busStop .en-stop {
+  height: 30px;
+  line-height: 30px;
+  font-size: 36px;
+  text-align: center;
+  color: #006633;
+  transform: scale(1, 1.5);
+  font-weight: 700;
+  font-size: 18px;
+}
+.header .rightPart .currentStop {
+  color: #ff3333;
+  width: 300px;
+  height: 90px;
+  padding: 0 150px;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 90px;
+  margin-top: 10px;
+}
+.content {
+  height: 250px;
+  background-color: #006633;
+}
+.content ul {
+  width: 920px;
+  height: 200px;
+  padding: 25px 40px 0 40px;
+}
+.content ul li {
+  float: left;
+  width: 30px;
+  height: 200px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(0.7, 0.7);
+}
+.content .stopFlag {
+  height: 25px;
+  position: relative;
+}
+.content .stopFlag .triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 565px;
+  margin-top: -15px;
+}
+.content .stopFlag .square {
+  width: 0;
+  height: 0;
+  border: 6px solid #fff;
+  position: absolute;
+  top: 2px;
+  left: 569px;
+}
+.footer {
+  height: 100px;
+  position: relative;
+}
+.footer .tips {
+  width: 600px;
+  height: 40px;
+  line-height: 40px;
+  margin: 30px 200px 0 200px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer .tips span {
+  margin-right: 30px;
+}
+.footer .jiantou {
+  position: absolute;
+  top: 20px;
+  left: 800px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 30px solid #ff3333;
+  border-left: 0 solid transparent;
+  transform: scale(1.5, 1);
+}
+.footer .redLine {
+  width: 700px;
+  height: 15px;
+  background-color: #ff3333;
+  margin: 0 200px 0 100px;
+}
